@@ -1,47 +1,58 @@
+/* Professional Engineering Palette */
+:root {
+    --primary: #2c3e50; /* Dark Navy */
+    --accent: #3498db;  /* Engineering Blue */
+    --text: #333;
+    --bg: #f4f7f6;
+}
+
 body {
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    font-family: 'Segoe UI', sans-serif;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--bg);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.container {
+header {
+    border-bottom: 3px solid var(--accent);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+h1 { color: var(--primary); margin-bottom: 0; }
+h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 2rem; }
+
+/* Skills List styling */
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
-    width: 90%;
-    max-width: 400px;
+    border: 1px solid #ddd;
 }
 
-.profile-img {
-    width: 80px; height: 80px;
-    background: #3b82f6;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 15px;
-    font-weight: bold; font-size: 1.5rem;
+/* Project Styling */
+.projects-list li {
+    text-align: left;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--accent);
 }
 
-.tagline { color: #94a3b8; font-size: 0.9rem; margin-bottom: 30px; }
-
-.link-card {
-    display: block;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: white;
-    transition: transform 0.2s, background 0.2s;
-}
-
-.link-card:hover {
-    transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.2);
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
 }
