@@ -1,58 +1,56 @@
-/* Professional Engineering Palette */
 :root {
-    --primary: #2c3e50; /* Dark Navy */
-    --accent: #3498db;  /* Engineering Blue */
-    --text: #333;
-    --bg: #f4f7f6;
+    --navy: #1e3a8a;
+    --accent: #3b82f6;
+    --bg: #f8fafc;
+    --text: #1e293b;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
     background-color: var(--bg);
-    max-width: 800px;
+    color: var(--text);
+    line-height: 1.6;
+    max-width: 850px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 header {
-    border-bottom: 3px solid var(--accent);
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-}
-
-h1 { color: var(--primary); margin-bottom: 0; }
-h2 { color: var(--primary); border-left: 5px solid var(--accent); padding-left: 15px; margin-top: 2rem; }
-
-/* Skills List styling */
-ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    background: white;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
-    border: 1px solid #ddd;
+    border-bottom: 3px solid var(--navy);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-/* Project Styling */
-.projects-list li {
-    text-align: left;
-    margin-bottom: 10px;
-    border-left: 3px solid var(--accent);
+h1 { color: var(--navy); font-size: 2.5rem; margin-bottom: 0.5rem; }
+h2 { color: var(--navy); border-left: 5px solid var(--accent); padding-left: 1rem; margin-top: 2.5rem; }
+
+.contact-bar a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.project-card, .exp-item {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
 footer {
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #666;
     text-align: center;
+    margin-top: 4rem;
+    color: #64748b;
+    font-size: 0.9rem;
 }
